@@ -1,0 +1,5 @@
+package br.com.akira.entidade;
+
+public class Usuario {
+
+}
