@@ -4,12 +4,12 @@ import br.com.akira.dao.UsuarioDAO;
 import br.com.akira.entidade.Usuario;
 
 public class UsuarioTeste {
-
+	
 	public static void main(String[] args) {
+		edita();
 		
-		// edita();
 		// adiciona();
-
+		
 	}
 
 	private static void edita() {
@@ -18,7 +18,7 @@ public class UsuarioTeste {
 		u.setNome("Pedro");
 		u.setLogin("ped");
 		u.setSenha("987");
-
+		
 		UsuarioDAO dao = new UsuarioDAO();
 		dao.edita(u);
 	}
@@ -28,7 +28,7 @@ public class UsuarioTeste {
 		u.setNome("Maria");
 		u.setLogin("mar");
 		u.setSenha("654");
-
+		
 		UsuarioDAO dao = new UsuarioDAO();
 		dao.adiciona(u);
 	}
